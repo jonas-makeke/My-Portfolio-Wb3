@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Jonas Makeke - Spécialiste Blockchain & Web3</title>
+    
+    <!-- Chosen Palette: Warm Neutrals (Cream, Dark Brown, Muted Gold) -->
+    <!-- Application Structure Plan: A single-page portfolio design. The structure includes a hero section for introduction, a navigation bar for easy access, an 'About' section for the summary, an interactive tabbed 'Experience' section to detail roles, a visualized 'Skills' section using a bar chart for impact, and a footer. This structure is more engaging than a linear document, allowing users to quickly navigate to areas of interest and interact with the content, which is ideal for a modern professional profile. -->
+    <!-- Visualization & Content Choices: 1. Experience: Goal=Organize, Method=Tabbed interface, Interaction=Click to show content, Justification=Separates roles cleanly for better readability. 2. Skills: Goal=Compare/Inform, Method=Horizontal Bar Chart (Chart.js), Interaction=Hover tooltips, Justification=Visually represents areas of expertise and focus more effectively than a list. The chart uses canvas. All other visual elements are HTML/CSS. This approach enhances data consumption and engagement. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F4E3;
+            color: #3C3633;
+        }
+        .accent-color { color: #E0A75E; }
+        .bg-accent-color { background-color: #E0A75E; }
+        .border-accent-color { border-color: #E0A75E; }
+        .tab-active {
+            border-bottom: 2px solid #E0A75E;
+            color: #E0A75E;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-[#3C3633] text-[#F8F4E3] sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold accent-color">
+                Jonas Makeke
+            </div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="hover:accent-color transition-colors duration-300">À Propos</a></li>
+                <li><a href="#experience" class="hover:accent-color transition-colors duration-300">Expérience</a></li>
+                <li><a href="#skills" class="hover:accent-color transition-colors duration-300">Compétences</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <section id="hero" class="text-center mb-20">
+            <img src="/JONASCARDANO.jpg"alt="" width="15%">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Jonas Makeke</h1>
+            <h2 class="text-2xl md:text-3xl accent-color mb-6">Spécialiste Blockchain & Bâtisseur de Communauté Web3</h2>
+            <p class="max-w-3xl mx-auto text-lg text-gray-700">
+                Passionné par la décentralisation, je me consacre à la promotion des écosystèmes Cardano et Polkadot et à l'autonomisation des communautés via l'innovation et l'éducation.
+            </p>
+        </section>
+
+        <section id="about" class="mb-20 scroll-mt-20">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-3xl font-bold mb-4 accent-color">Qui suis-je ?</h3>
+                <p class="text-lg leading-relaxed text-gray-800">
+                    Professionnel passionné par la Blockchain depuis 2020, avec une expertise approfondie des écosystèmes Cardano et Polkadot. Je me spécialise dans l'engagement communautaire et la promotion de l'innovation décentralisée, notamment à travers le Projet Catalyst. Je suis un créateur de contenu Blockchain actif, dédié à l'éducation et à la sensibilisation aux vastes opportunités qu'offre le Web3. Mon parcours démontre une capacité à vulgariser des concepts complexes et à mobiliser des communautés autour de projets technologiques d'avant-garde.
+                </p>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-20 scroll-mt-20">
+            <h3 class="text-3xl font-bold text-center mb-8 accent-color">Expérience & Implication</h3>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <div class="border-b border-gray-200 mb-6">
+                    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="experience-tabs">
+                        <li class="mr-2">
+                            <button class="tab inline-block p-4 rounded-t-lg tab-active" data-tab="community">Communauté & Éducation</button>
+                        </li>
+                        <li class="mr-2">
+                            <button class="tab inline-block p-4 rounded-t-lg" data-tab="content">Création de Contenu</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="tab-content">
+                    <div class="tab-pane" id="community">
+                        <h4 class="text-2xl font-bold mb-3 text-gray-800">Membre Actif & Responsable de Sensibilisation | Communauté Cardano (Projet Catalyst)</h4>
+                        <p class="text-gray-500 mb-4">Goma, RDC | Depuis 2020</p>
+                        <ul class="list-disc list-inside space-y-3 text-gray-700 leading-relaxed">
+                            <li><strong>Engagement Écosystémique :</strong> Implication continue et approfondie dans les écosystèmes Cardano et Polkadot, suivant de près leurs développements technologiques.</li>
+                            <li><strong>Projet Catalyst :</strong> Participation active à l'initiative de Cardano pour stimuler l'innovation et la croissance par des propositions financées par la communauté.</li>
+                            <li><strong>Éducation & Sensibilisation à Goma :</strong> Pilotage d'une initiative locale pour éduquer la communauté universitaire sur la blockchain, Cardano et le Projet Catalyst.</li>
+                            <li><strong>Autonomisation des Talents :</strong> Présentation des opportunités de financement et de développement de projets innovants pour autonomiser les jeunes talents locaux avec les ressources du Web3.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane hidden" id="content">
+                         <h4 class="text-2xl font-bold mb-3 text-gray-800">Créateur de Contenu Blockchain & Web3</h4>
+                        <p class="text-gray-500 mb-4">En ligne | Depuis 2020</p>
+                        <ul class="list-disc list-inside space-y-3 text-gray-700 leading-relaxed">
+                            <li><strong>Production de Contenu :</strong> Création régulière de contenu éducatif et informatif sur diverses facettes de la Blockchain, des cryptomonnaies et du Web3.</li>
+                            <li><strong>Engagement d'Audience :</strong> Utilisation des plateformes de médias sociaux (notamment X/Twitter) pour partager des analyses, actualités et réflexions sur l'évolution de l'industrie.</li>
+                            <li><strong>Promotion du Web3 :</strong> Contribution active à la démocratisation de la connaissance sur les technologies décentralisées et leurs applications pratiques.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-20 scroll-mt-20">
+            <h3 class="text-3xl font-bold text-center mb-8 accent-color">Compétences Clés</h3>
+             <div class="bg-white p-8 rounded-lg shadow-lg">
+                <p class="text-center text-gray-600 mb-6">Visualisation de mes domaines d'expertise et de concentration principaux au sein de l'écosystème Web3.</p>
+                <div class="chart-container relative h-96 md:h-[400px] w-full max-w-4xl mx-auto">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#3C3633] text-[#F8F4E3] py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-bold mb-2">Contact</p>
+            <p class="mb-4">N'hésitez pas à me contacter pour toute collaboration ou discussion.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#My Email address" class="text-lg hover:accent-color transition-colors duration-300">jmakeke6@gmail.com</a>
+                <a href="#My X Accunt" class="text-lg hover:accent-color transition-colors duration-300"> <li>https://x.com/jonas_makeke/></li></a>
+            </div>
+            <p class="mt-8 text-sm text-gray-400">&copy; 2025 Jonas Makeke. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const tabs = document.querySelectorAll('.tab');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    const target = tab.getAttribute('data-tab');
+
+                    tabs.forEach(t => t.classList.remove('tab-active'));
+                    tab.classList.add('tab-active');
+
+                    tabPanes.forEach(pane => {
+                        if (pane.id === target) {
+                            pane.classList.remove('hidden');
+                        } else {
+                            pane.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            const ctx = document.getElementById('skillsChart').getContext('2d');
+            const skillsChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Écosystème Cardano', 'Gouvernance (Catalyst)', 'Écosystème Polkadot', 'Gestion de Communauté', 'Création de Contenu', 'Sensibilisation & Éducation'],
+                    datasets: [{
+                        label: 'Niveau de Focus',
+                        data: [90, 85, 75, 95, 80, 92],
+                        backgroundColor: [
+                            'rgba(224, 167, 94, 0.6)',
+                            'rgba(60, 54, 51, 0.6)',
+                            'rgba(224, 167, 94, 0.5)',
+                            'rgba(60, 54, 51, 0.7)',
+                             'rgba(224, 167, 94, 0.7)',
+                             'rgba(60, 54, 51, 0.8)',
+                        ],
+                        borderColor: [
+                            'rgba(224, 167, 94, 1)',
+                            'rgba(60, 54, 51, 1)',
+                            'rgba(224, 167, 94, 1)',
+                            'rgba(60, 54, 51, 1)',
+                             'rgba(224, 167, 94, 1)',
+                             'rgba(60, 54, 51, 1)',
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed.x !== null) {
+                                        label += context.parsed.x + '%';
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            max: 100,
+                             ticks: {
+                                callback: function(value) {
+                                    return value + '%'
+                                }
+                            }
+                        },
+                        y: {
+                           ticks: {
+                                autoSkip: false
+                           }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+
