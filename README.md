@@ -1,4 +1,4 @@
-## My-Portfolio-Wb3 
+My-Portfolio-Wb3 
 Jonas Makeke – Blockchain Specialist & Web3 Community Leader 📍 Goma, RDC
 =
 Passionate about decentralization and active in the blockchain ecosystem since 2020, 
