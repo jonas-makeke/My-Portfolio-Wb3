@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonas Makeke | Community & Social Media Manager</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #1a73e8;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .header, .contact {
+      text-align: center;
+    }
+    .contact a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Jonas Makeke</h1>
+      <p><strong>Community & Social Media Manager</strong></p>
+    </div>
+    <div class="contact">
+      <p>📍 Goma, DRC | 📧 <a href="mailto:jmakeke6@gmail.com">jmakeke6@gmail.com</a> | <a href="https://x.com/jonas_makeke" target="_blank">x.com/jonas_makeke</a></p>
+    </div>
+
+    <div class="section">
+      <h2>🎯 Professional Profile</h2>
+      <p>Passionate Community & Social Media Manager with a focus on Blockchain, Web3, and digital community development. Experienced in online community management, engaging content creation, and social media strategy. Skilled in digital tools, marketing trends, and organic growth strategies.</p>
+    </div>
+
+    <div class="section">
+      <h2>🛠️ Key Skills</h2>
+      <ul>
+        <li>Social Media Strategy (X, Instagram, Facebook, LinkedIn)</li>
+        <li>Content Creation (texts, visuals, short videos)</li>
+        <li>Community Management & Engagement</li>
+        <li>Growth Campaigns / Airdrops / Ambassador Programs</li>
+        <li>Moderation & Community Support (Discord, Telegram)</li>
+        <li>Web3, Crypto & NFT Marketing</li>
+        <li>Tools: Canva, Notion, Buffer, Hootsuite, ChatGPT, Google Analytics</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🧪 Work Experience</h2>
+      <p><strong>Community Manager Web3 – Bashacoin Project</strong><br />Remote | 2024 – Present</p>
+      <ul>
+        <li>Built and managed communities on Telegram, Discord, and X</li>
+        <li>Launched engagement campaigns (Giveaways, Quizzes, Airdrops)</li>
+        <li>Created educational content around local blockchain</li>
+        <li>Tracked engagement KPIs and reported monthly</li>
+      </ul>
+      <p><strong>Social Media Manager – Local Digital Startup</strong><br />Goma | 2023 – 2024</p>
+      <ul>
+        <li>Developed and implemented social media strategy</li>
+        <li>Achieved +200% community growth in 6 months</li>
+        <li>Managed targeted advertising campaigns (Meta Ads)</li>
+        <li>Collaborated with local influencers</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🎓 Education</h2>
+      <p><strong>Web3 & Blockchain Development Training</strong><br />Ongoing | 2024 – Present | Online Platform / Bootcamps</p>
+      <p><strong>Bachelor’s in Communication & Digital Marketing</strong><br />University of Goma | 2018 – 2021</p>
+    </div>
+
+    <div class="section">
+      <h2>🌐 Languages</h2>
+      <ul>
+        <li>English:⭐⭐⭐(Intermediate)</li>
+        <li>French: ⭐⭐⭐⭐⭐(Fluent)</li>
+        <li>Swahili:⭐⭐⭐⭐⭐ (Fluent)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📌 Interests</h2>
+      <ul>
+        <li>Web3</li>
+        <li>Crypto Education</li>
+        <li>Graphic Design</li>
+        <li>Community Events</li>
+        <li>Supporting Local Entrepreneurs</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
